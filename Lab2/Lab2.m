@@ -36,9 +36,12 @@ mult_out=s1FPGA.*s2FPGA;
 mult_out = mult_out/2^8;
 
 %%%TODO 128-point FFT
+% kontrol ediniz
+f = (Fs/2) * linspace(-1,1,128);
+M = fftshift(fft(mult_out))/128;
+plot(f,abs(M));
+hold on;
 
-sim_results = importdata('out.txt')';	% fft results from FPGA
-
-
-
-
+sim_results = importdata('fft_output.txt')';	% fft results from FPGA
+f_FPGA = (50e3/2) * linspace(-1,1,128);
+plot(f_FPGA,sim_results,'r');
