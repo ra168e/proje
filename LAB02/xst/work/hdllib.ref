@@ -1,0 +1,8 @@
+AR block_ram block_ram_a "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/Block_RAM.vhd" sub00/vhpl01 1392831961
+EN topmuz NULL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/topmuz.vhd" sub00/vhpl04 1392831966
+AR sqrt sqrt_a "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/SQRT.vhd" sub00/vhpl07 1392831965
+EN block_ram NULL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/Block_RAM.vhd" sub00/vhpl00 1392831960
+AR topmuz behavioral "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/topmuz.vhd" sub00/vhpl05 1392751250
+EN sqrt NULL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/SQRT.vhd" sub00/vhpl06 1392831964
+EN mul NULL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/MUL.vhd" sub00/vhpl02 1392831962
+AR mul mul_a "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/MUL.vhd" sub00/vhpl03 1392831963

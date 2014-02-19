@@ -1,0 +1,29 @@
+V3 16
+FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/Block_RAM.vhd" 2014/02/18.21:03:55 P.20131013
+EN work/Block_RAM 1392831960 \
+      FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/Block_RAM.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Block_RAM/Block_RAM_a 1392831961 \
+      FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/Block_RAM.vhd" \
+      EN work/Block_RAM 1392831960
+FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/MUL.vhd" 2014/02/18.21:20:31 P.20131013
+EN work/MUL 1392831962 \
+      FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/MUL.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUL/MUL_a 1392831963 \
+      FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/MUL.vhd" \
+      EN work/MUL 1392831962
+FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/SQRT.vhd" 2014/02/19.17:08:20 P.20131013
+EN work/SQRT 1392831964 \
+      FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/SQRT.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/SQRT/SQRT_a 1392831965 \
+      FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/ipcore_dir/SQRT.vhd" \
+      EN work/SQRT 1392831964
+FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/topmuz.vhd" 2014/02/18.21:19:00 P.20131013
+EN work/topmuz 1392751249 \
+      FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/topmuz.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/topmuz/Behavioral 1392751250 \
+      FL "C:/Users/dinazor/Documents/4.2/EEE 491/Lab02/LAB02/topmuz.vhd" \
+      EN work/topmuz 1392751249 CP FFT_CORE CP Block_RAM CP MUL CP SQRT

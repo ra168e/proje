@@ -1,0 +1,5 @@
+vhdl work "ipcore_dir/Block_RAM.vhd"
+vhdl work "ipcore_dir/MUL.vhd"
+vhdl work "ipcore_dir/SQRT.vhd"
+vhdl work "ipcore_dir/fft_core.vhd"
+vhdl work "topmuz.vhd"
