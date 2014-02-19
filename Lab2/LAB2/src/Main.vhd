@@ -1,10 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
-<<<<<<< HEAD
 -- Engineer: gurcan-kosansu-unal
-=======
--- Engineer: 
->>>>>>> b6658e94f5b3ae6abea9c9d90df188e4240260c6
 -- 
 -- Create Date:    00:04:37 02/09/2014 
 -- Design Name: 
@@ -69,16 +65,10 @@ architecture Behavioral of Main is
 	SIGNAL MULT_RESULT : STD_LOGIC_VECTOR(7 DOWNTO 0);
 	SIGNAL MULT_IN_A 	: STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');
 	SIGNAL MULT_IN_B 	: STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');
-<<<<<<< HEAD
 	SIGNAL ROW			: INTEGER RANGE 0 TO 127 := 0;
 	SIGNAL ADDRESS		: STD_LOGIC_VECTOR(6 DOWNTO 0);
 	SIGNAL RAM_WRITE	: STD_LOGIC_VECTOR(0 DOWNTO 0) := "1";		--ILGINCLIKLER...
 	SIGNAL RAM_DATA   : STD_LOGIC_VECTOR(7 DOWNTO 0);
-=======
-	SIGNAL ROW			: INTEGER RANGE 0 TO 128 := 0;
-	SIGNAL ADDRESS		: STD_LOGIC_VECTOR(6 DOWNTO 0);
-	SIGNAL RAM_WRITE	: STD_LOGIC := '1';
->>>>>>> b6658e94f5b3ae6abea9c9d90df188e4240260c6
 	SIGNAL STATE		: STD_LOGIC_VECTOR(1 DOWNTO 0) := "00"; 	--00 MULT, 01 FFT
 	
 	
@@ -92,17 +82,10 @@ begin
 	Output_RAM : Block_RAM
 	  PORT MAP (
 		 clka 	=> CLK,
-<<<<<<< HEAD
 		 wea 		=> RAM_WRITE,
 		 addra 	=> ADDRESS,
 		 dina 	=> MULT_RESULT,
 		 douta 	=> RAM_DATA
-=======
-		 wea 	=> "1",
-		 addra 	=> ADDRESS,
-		 dina 	=> MULT_RESULT,
-		 douta 	=> OPEN
->>>>>>> b6658e94f5b3ae6abea9c9d90df188e4240260c6
 	  );
 	
 	MIXER : MUL
@@ -116,7 +99,6 @@ begin
 	variable foo : integer := 0;
 	BEGIN
 	IF STATE = "00" THEN
-<<<<<<< HEAD
 		IF RISING_EDGE(CLK) THEN	
 			IF foo = 127 THEN
 				RAM_WRITE <= "0";
@@ -127,17 +109,6 @@ begin
 				foo := foo + 1;
 				ROW <= ROW + 1;	
 			END IF;
-=======
-		IF foo < 129 THEN
-			IF RISING_EDGE(CLK) THEN	
-				ROW <= ROW + 1;	
-				foo := foo + 1; 
-			END IF;
-		ELSE
-			RAM_WRITE <= '0';
-			STATE <= "01";
-			foo := 0;
->>>>>>> b6658e94f5b3ae6abea9c9d90df188e4240260c6
 		END IF;
 	ELSIF STATE = "01" THEN
 		--FFT STUFF	
